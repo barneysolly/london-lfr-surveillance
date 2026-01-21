@@ -70,7 +70,6 @@ def load_lfr(pdf_path: Path) -> pd.DataFrame:
 
 def create_geometry(geo_lfr_df: pd.DataFrame) -> gpd.GeoDataFrame:
     """Convert LFR DataFrame to GeoDataFrame."""
-    geo_lfr_df = records_lfr.copy()
 
     geo_lfr_df["Deployment Location"] = (
         geo_lfr_df["Deployment Location"]
