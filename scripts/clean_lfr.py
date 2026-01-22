@@ -69,7 +69,15 @@ def load_lfr(pdf_path: Path) -> pd.DataFrame:
 
 
 def create_geometry(geo_lfr_df: pd.DataFrame) -> gpd.GeoDataFrame:
-    """Convert LFR DataFrame to GeoDataFrame."""
+    """
+    Convert LFR DataFrame to GeodataFrame
+
+    Args:
+        geo_lfr_df (DataFrame): DataFrame of LFR deployments
+
+    Returns:
+        gpd.GeoDataFrame: Geodatatframe containing geocoded LFR locations
+    """
 
     geo_lfr_df["Deployment Location"] = (
         geo_lfr_df["Deployment Location"]
@@ -118,7 +126,7 @@ def create_geometry(geo_lfr_df: pd.DataFrame) -> gpd.GeoDataFrame:
     .str.replace("B'way", "Broadway", regex=False)
     )
 
-     # manually assing the missing rows 
+    # manually assing the missing rows 
     # https://www.gps-coordinates.net/
 
     geo_lfr_df.loc[26, ["latitude", "longitude"]] = [51.506255, -0.220575]
