@@ -75,6 +75,17 @@ project-folder/
 └── Report - Live Facial Recognition Deployments, London 2025.pdf
 └── Report - Live Facial Recognition Deployments, London 2025.docx
 
+## Running the Python Scripts (in order)
+
+To reproduce the data processing and analysis, run the Python scripts in the following order:
+clean_imd.py
+clean_lfr.py
+clean_s&s_agg.py
+lsoa_agg.py
+stats_analysis.py
+
+
+
 ## Data Availability
 Raw source datasets are not included in this repository due to size and licensing restrictions.  
 Raw data can be downloaded from the original sources (see Data Sources).  
