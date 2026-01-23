@@ -1,46 +1,97 @@
-# Biometric Substitution: Analyzing the LFR rollout in London (2023-2025)
+# Live Facial Recognition and Stop & Search Mapping (London, 2023–2025)
 
-This project investigates a potential shift in UK policing tactics: the transition from physical **Stop and Search** to **Live Facial Recognition (LFR)**. Recent statements about the drop in stop and search is brought into question This study hypothesizes that the "volume of search" has not actually decreased, but has instead become "frictionless" and "invisible" through the rapid scaling of biometric surveillance.
+## Overview
+This project analyses the spatial relationship between Live Facial Recognition (LFR) deployment locations and stop and search incidents in London. The analysis uses open data and GIS methods to explore patterns of policing intensity, change over time, and deprivation.
 
-### Key Research Questions:
+The main outputs are:
+- Report: Analysis of the maps and summary statistics with policy related conclusions (Report - Live Facial Recognition Deployments, London 2025)
+- Map 1: Stop and Search levels in 2025 with LFR deployment locations (2025_lfr_s&s)
+- Map 2: Change in Stop and Search (2023–2025) with LFR deployment locations (change_over_time)
+- Map 3: Deprivation (IMD) with LFR deployment locations (lfr_index_multiple_dep)
+- Summary statistics table of the relationship between LFR deployment and stop and search / deprivation (Table of results)
 
-1. **The Substitution Effect:** Does the decline in physical stops correlate geographically with the rollout of LFR vans and permanent cameras?
-2. **Environmental Justice:** Are these high-tech "digital searches" disproportionately concentrated in areas of high deprivation (IMD Deciles 1-3)?
-3. **Policy Alignment:** Does the "frictionless" nature of LFR bypass the traditional legal protections (PACE 1984) associated with physical searches?
+## Data Sources
+- Home Office Stop and Search (2023 and 2025)
+- Metropolitan Police Service LFR deployment locations (2023–2025)
+- ONS LSOA boundaries (2011)
+- IMD 2019 (England)
 
----
+## Tools and Software
+- Python (data processing and analysis)
+- QGIS (map creation and styling)
 
-## 🏛 Policy & Ethics Context
+### Python Libraries
+The Python environment requires the following packages (see `requirements.txt`):
+- pandas
+- geopandas
+- shapely
+- geopy
+- pymupdf
 
-This analysis is situated within the following UK policy frameworks:
+## File Structure
+project-folder/
+│
+├── data/
+│   └── processed/
+│       ├── 2023_stop_search_aggregated.csv
+│       ├── imd_dep_london.gpkg
+│       ├── lfr_clean_geo.csv
+│       ├── lfr_deployments.gpkg
+│       ├── lsoa_change_2023_2025.gpkg
+│       ├── lsoa_stop_search.gpkg
+│       └── stop_search_aggregated.csv
+│
+├── notebooks/
+│   ├── 01_lfr_extraction.ipynb
+│   ├── 02_stop_search_extraction.ipynb
+│   ├── 03_LSOA_aggregation.ipynb
+│   ├── 04_hist_s&s_extraction.ipynb
+│   ├── 05_2023_LSOA_agg_join.ipynb
+│   ├── 06_deprivation_extract_join.ipynb
+│   └── 07_stats_calc.ipynb
+│
+├── outputs/
+│   ├── maps/
+│   │   ├── 2025_lfr_s&s.pdf
+│   │   ├── 2025_lfr_s&s.png
+│   │   ├── change_over_time.pdf
+│   │   ├── change_over_time.png
+│   │   ├── lfr_index_multiple_dep.pdf
+│   │   └── lfr_index_multiple_dep.png
+│   │
+│   └── tables/
+│       ├── summary_stats.csv
+│       └── Table of results.pdf
+│
+├── scripts/
+│   ├── clean_imd.py
+│   ├── clean_lfr.py
+│   ├── clean_s&s_agg.py
+│   ├── lsoa_agg.py
+│   └── stats_analysis.py
+│
+├── requirements.txt
+├── README.md
+└── Report - Live Facial Recognition Deployments, London 2025.pdf
+└── Report - Live Facial Recognition Deployments, London 2025.docx
 
-* **The Data (Use and Access) Act 2025:** Evaluating how new AI provisions impact biometric privacy.
-* **Home Office Facial Recognition Consultation (2025/26):** Contributing data-driven insights into the "proportionality" of LFR deployments.
-* **The "ABC" of Geospatial Ethics:** Ensuring **A**ccountability, identifying **B**ias, and providing **C**larity in location data.
+## Data Availability
+Raw source datasets are not included in this repository due to size and licensing restrictions.  
+Raw data can be downloaded from the original sources (see Data Sources).  
+Processed datasets used in the analysis are provided in the `data/processed/` folder.
 
----
+## Notes
 
-## 📊 Data Sources
+Datasets require manual download.
+https://data.police.uk/data/
+https://data.london.gov.uk/dataset/lsoa-atlas-2n8zy/
+https://www.met.police.uk/SysSiteAssets/media/downloads/force-content/met/advice/lfr/deployment-records/live-facial-recognition---deployment-record-2025-to-date.pdf
 
-To ensure reproducibility while respecting file size limits and licensing, raw data is not hosted in this repository. Use the following sources:
+The stop and search dataset is limited to January–November 2025 to align with available data.
 
-* **Policing Data:** [Police.uk Data Portal](https://data.police.uk/) (Metropolitan Police Service).
-* **Surveillance Logs:** [Met Police LFR Deployment Records](https://www.met.police.uk/advice/advice-and-information/facial-recognition/live-facial-recognition/).
-* **Socio-Economic Data:** [English Indices of Deprivation 2019/2024](https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019).
-* **Geospatial Boundaries:** [ONS Open Geography Portal](https://geoportal.statistics.gov.uk/) (LSOA Boundaries).
+The map outputs are stored in the outputs/maps folder as both PDF and PNG.
 
----
+## License / Attribution
 
-## 🛠 Tech Stack
+All datasets used are publicly available from the relevant government and police sources. The maps and analysis were created by the author.
 
-* **Language:** Python 3.11+ (Jupyter Notebooks)
-* **GIS:** QGIS 3.x & GeoPandas
-* **Libraries:** `pandas`, `geopandas`, `matplotlib`, `contextily`, `tabula-py`
-* **Version Control:** GitHub Desktop
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-*Statistical data contains public sector information licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).*
