@@ -6,6 +6,11 @@ title: Live Facial Recognition and Stop & Search in London
 
 This project explores the spatial relationship between Live Facial Recognition (LFR) deployments, stop and search activity, and socio-economic deprivation in London between 2023 and 2025.
 
+Author: Barney Solly 
+Date of publication: 23/01/2026
+
+➡️ [LinkedIn Profile - Barney Solly (Researcher & Analyst)](https://www.linkedin.com/in/barney-solly/)
+
 ---
 
 ## 📄 Project Report
@@ -18,13 +23,13 @@ This project explores the spatial relationship between Live Facial Recognition (
 ## 📊 Maps
 
 ### Stop and Search & LFR Locations (2025)
-![2025 LFR and Stop & Search Map](outputs/maps/2025_lfr_s&s.png)
+![2025 Stop & Search Map with LFR overlay](outputs/maps/2025_lfr_s&s.png)
 
 ### Change Over Time (2023–2025)
-![Change Over Time Map](outputs/maps/change_over_time.png)
+![2025 - 2023 Stop & Search change over time with LFR overlay](outputs/maps/change_over_time.png)
 
 ### Deprivation & LFR Overlay
-![Deprivation and LFR Map](outputs/maps/lfr_index_multiple_dep.png)
+![IMD Deprivation map with LFR overlay](outputs/maps/lfr_index_multiple_dep.png)
 
 ---
 
