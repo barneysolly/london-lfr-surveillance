@@ -26,12 +26,12 @@ Date of publication: 23/01/2026
 ### Stop and Search & LFR Locations (2025)
 ![2025 Stop & Search Map with LFR overlay](outputs/maps/2025_lfr_s&s.png)
 
-
 ### Change Over Time (2023–2025)
 ![2025 - 2023 Stop & Search change over time with LFR overlay](outputs/maps/change_over_time.png)
 
 ### Deprivation & LFR Overlay
 ![IMD Deprivation map with LFR overlay](outputs/maps/lfr_index_multiple_dep.png)
+
 
 Source data used to produce maps published under OGL v3.0
 ---
