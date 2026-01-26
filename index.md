@@ -45,7 +45,7 @@ All of the data processing scripts and analysis code are available here on GitHu
 
 ## Data Availability
 
-Raw source datasets are not included due to size and licensing restrictions, but can be downloaded from original sources (linked in the repository README).  
+Raw source datasets are not included, but can be downloaded from original sources (linked in the repository README).  
 Processed data used in the analysis is included in the repository under `data/processed/`.
 
 ---
