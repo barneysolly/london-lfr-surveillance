@@ -14,14 +14,14 @@ Date of publication: 23/01/2026
 
 ---
 
-## 📄 Project Report
+## Project Report
 
 **Download the full report (PDF):**  
 ➡️ [Live Facial Recognition Deployments, London 2025 (PDF)](Report%20-%20Live%20Facial%20Recognition%20Deployments,%20London%202025.pdf)
 
 ---
 
-## 📊 Maps
+## Maps
 
 ### Stop and Search & LFR Locations (2025)
 ![2025 Stop & Search Map with LFR overlay](outputs/maps/2025_lfr_s&s.png)
@@ -34,21 +34,21 @@ Date of publication: 23/01/2026
 
 ---
 
-## 💻 Code and Data
+## Code and Data
 
 All of the data processing scripts and analysis code are available here on GitHub:  
 ➡️ [https://github.com/barneysolly/london-lfr](https://github.com/barneysolly/london-lfr/)
 
 ---
 
-## 📂 Data Availability
+## Data Availability
 
 Raw source datasets are not included due to size and licensing restrictions, but can be downloaded from original sources (linked in the repository README).  
 Processed data used in the analysis is included in the repository under `data/processed/`.
 
 ---
 
-## 🧰 Tools & Libraries
+## Tools & Libraries
 
 This project was created using:
 - Python (pandas, GeoPandas, shapely, geopy, PyMuPDF)
@@ -56,7 +56,7 @@ This project was created using:
 
 ---
 
-## 📬 Contact
+## Contact
 
 For questions or feedback, please visit the GitHub repository above.
 
