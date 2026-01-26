@@ -1,5 +1,7 @@
 # Live Facial Recognition and Stop & Search Mapping (London, 2023–2025)
 
+## See files titled: "Report - Live Facial Recognition Deployments, London 2025" for the completed project output. 
+
 ## Overview
 This project analyses the spatial relationship between Live Facial Recognition (LFR) deployment locations and stop and search incidents in London. The analysis uses open data and GIS methods to explore patterns of policing intensity, change over time, and deprivation.
 
