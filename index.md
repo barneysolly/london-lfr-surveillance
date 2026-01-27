@@ -32,8 +32,12 @@ Date of publication: 23/01/2026
 ### Deprivation & LFR Overlay
 ![IMD Deprivation map with LFR overlay](outputs/maps/lfr_index_multiple_dep.png)
 
+## Interactive 2025 Stop & Search map (DataWrapper)
 
-Source data used to produce maps published under OGL v3.0 / v2.0
+[2025 Stop & Search statistics aggregated by LSOA](outputs/maps/datawrapper.html)
+
+
+Source data used to produce maps published under OGL v3.0 / v2.0 © Crown copyright.
 ---
 
 ## Code and Data
