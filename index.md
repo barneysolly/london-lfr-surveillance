@@ -33,12 +33,12 @@ Date of publication: 23/01/2026
 ![IMD Deprivation map with LFR overlay](outputs/maps/lfr_index_multiple_dep.png)
 
 
-Source data used to produce maps published under OGL v3.0
+Source data used to produce maps published under OGL v3.0 / v2.0
 ---
 
 ## Code and Data
 
-All of the data processing scripts and analysis code are available here on GitHub:  
+Data processing scripts and analysis code are available here on GitHub:  
 [https://github.com/barneysolly/london-lfr](https://github.com/barneysolly/london-lfr/)
 
 ---
