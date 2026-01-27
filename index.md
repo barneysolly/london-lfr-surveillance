@@ -34,7 +34,12 @@ Date of publication: 23/01/2026
 
 ### Interactive 2025 Stop & Search map (DataWrapper)
 
-![2025 Stop & Search statistics aggregated by LSOA](outputs/maps/datawrapper.html)
+<iframe 
+  title="Stop & Search Incidents by LSOA (Jan-Nov 2025)"
+  src="https://datawrapper.dwcdn.net/Tcytk/1/" 
+  frameborder="0" 
+  style="width: 100%; height: 650px;">
+</iframe>
 
 
 **Source data used to produce maps published under OGL v3.0 / v2.0 © Crown copyright.**
