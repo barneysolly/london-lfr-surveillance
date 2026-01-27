@@ -10,14 +10,14 @@ Author: Barney Solly
 
 Date of publication: 23/01/2026
 
-➡️ [LinkedIn Profile - Barney Solly (Researcher & Analyst)](https://www.linkedin.com/in/barney-solly/)
+[LinkedIn Profile - Barney Solly](https://www.linkedin.com/in/barney-solly/)
 
 ---
 
 ## Project Report
 
 **Download the full report (PDF):**  
-➡️ [Live Facial Recognition Deployments, London 2025 (PDF)](Report%20-%20Live%20Facial%20Recognition%20Deployments,%20London%202025.pdf)
+[Live Facial Recognition Deployments, London 2025 (PDF)](Report%20-%20Live%20Facial%20Recognition%20Deployments,%20London%202025.pdf)
 
 ---
 
@@ -39,7 +39,7 @@ Source data used to produce maps published under OGL v3.0
 ## Code and Data
 
 All of the data processing scripts and analysis code are available here on GitHub:  
-➡️ [https://github.com/barneysolly/london-lfr](https://github.com/barneysolly/london-lfr/)
+[https://github.com/barneysolly/london-lfr](https://github.com/barneysolly/london-lfr/)
 
 ---
 
